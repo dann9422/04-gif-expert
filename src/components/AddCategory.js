@@ -13,7 +13,7 @@ export const AddCategory = ({setcategories}) => {
 e.preventDefault();
 // console.log('enviado desde el formulario ')
 if(inputValue.trim().length>2){
-    setcategories(cats=>[...cats,inputValue]);
+    setcategories(cats=>[inputValue,...cats]);
 setinputValue('');
 }
 

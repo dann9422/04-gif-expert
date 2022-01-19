@@ -32,3 +32,33 @@ font-size: 1.2 rem;
 color: gray;
 
 }
+
+.card{
+    align-content: center;
+    border: 1px solid grey;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow:5px 5px grey;
+
+}
+
+.card p{
+
+  padding:  5px;
+  text-align: center;
+
+}
+
+.card img{
+  max-height: 170px;
+}
+
+.card-grid{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}

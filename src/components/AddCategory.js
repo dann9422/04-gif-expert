@@ -21,7 +21,7 @@ setinputValue('');
 }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text"
+            <input type="text" placeholder='Ingrese la categoria que desea buscar'
             value={inputValue}
             onChange={handleInpuntChange}/>
             

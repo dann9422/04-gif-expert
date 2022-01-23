@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import propTypes from 'prop-types';
-
+import PropTypes from 'prop-types';
 export const AddCategory = ({setcategories}) => {
 
     const [inputValue, setinputValue] = useState('')
     const handleInpuntChange = (e)=>{
 
         setinputValue(e.target.value);
+        console.log('handleInpuntChange llamdo');
     }
 
     const handleSubmit =(e)=>{
@@ -21,6 +21,7 @@ setinputValue('');
 }
     return (
         <form onSubmit={handleSubmit}>
+            <p>{inputValue}</p>
             <input type="text" placeholder='Ingrese la categoria que desea buscar'
             value={inputValue}
             onChange={handleInpuntChange}/>
@@ -31,6 +32,7 @@ setinputValue('');
 }
 
 
-AddCategory.propTypes={
-    setcategories:propTypes.func.isRequired
+AddCategory.prototype={
+    setcategories: PropTypes.func.isRequired
+
 }
